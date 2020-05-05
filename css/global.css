@@ -254,6 +254,31 @@ a {
   max-height: unset;
 }
 
+.active-accordion {
+  position: relative;
+  background: #ccc;
+}
+
+.accordion {
+  position: relative;
+}
+
+.accordion::after {
+  content: "+";
+  position: absolute;
+  z-index: 1;
+  font-size: 20px;
+  right: 20px;
+}
+
+.active-accordion::after {
+  content: "-";
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  font-size: 30px;
+}
+
 .mobile-menu-visible {
   display: flex;
   opacity: 1;
